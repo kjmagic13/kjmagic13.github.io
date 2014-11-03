@@ -38,6 +38,12 @@ a:visited { color: #205caa; }
 /* Layout Styles */
 /* ----------------------------------------------------------*/
 
+/* Portfolio Images */
+
+.portfolio-image {
+  width: 100%;
+}
+
 /* Site header */
 
 .site-header {
