@@ -1,13 +1,13 @@
 ---
 layout:			post
 title:			"salonTREND"
-link:				salontrendvestal.com
+link:			salontrendvestal.com
 link_url:		http://salontrendvestal.com
-date:				2014-10-27 09:54:50
+date:			2014-10-27 09:54:50
 categories:		portfolio
 ---
 
-<img src="/images/portfolio-salontrend.png" class="portfolio-image" title="salonTREND" alt="salonTREND screenshot" align="right">The salonTREND website was developed using a custom built WordPress theme that utilizes the Twitter Bootstrap 3 framwork.
+<img src="/images/portfolio-salontrend.png" class="portfolio-image" title="{{page.title}}" alt="{{page.title}} screenshot" align="right">The salonTREND website was developed using a custom built WordPress theme that utilizes the Twitter Bootstrap 3 framwork.
 
 Notable features include:
 <ul>
