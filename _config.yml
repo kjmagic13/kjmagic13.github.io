@@ -8,6 +8,7 @@ baseurl: ""
 url: "http://kaymic.com"
 twitter_username: kjmagic13
 github_username:  kjmagic13
+paginate: 10
 
 # Build settings
 markdown: kramdown
