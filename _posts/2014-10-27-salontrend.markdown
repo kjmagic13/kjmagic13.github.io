@@ -7,4 +7,4 @@ date:				2014-10-27 09:54:50
 categories:		portfolio
 ---
 
-{% img portfolio-image /images/portfolio-salontrend.png auto auto 'salonTREND' 'salonTREND screenshot' %}
+<img src="/images/portfolio-salontrend.png" class="portfolio-image" title="salonTREND" alt="salonTREND screenshot">
