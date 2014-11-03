@@ -41,7 +41,17 @@ a:visited { color: #205caa; }
 /* Portfolio Images */
 
 .portfolio-image {
-  width: 100%;
+  width: 45%;
+  box-shadow: 0px 0px 3pt 2pt #ccc;
+  margin: 0 15px;
+}
+
+@media (max-width: 600px) {
+  .portfolio-image {
+    width: 100%;
+    margin: 10px 0 20px 0;
+    float: left;
+  }
 }
 
 /* Site header */
