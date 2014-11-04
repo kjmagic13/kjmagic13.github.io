@@ -4,17 +4,27 @@ layout: default
 
 <div class="home">
 
-  <h1>Portfolio</h1>
+	<h1>Portfolio</h1>
 
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
+	<ul class="media-list">
+		{% for post in site.posts %}
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+		<li class="media">
+			<!-- <a class="media-left" href="#">
+				<img src="..." alt="...">
+			</a> -->
+			<div class="media-body">
+				<h4 class="media-heading">
+				<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+				<small>{{ post.date | date: "%b %-d, %Y" }}</small>
+				</h4>
+				<!-- Excerpt -->
+			</div>
+		</li>
+
+		{% endfor %}
+	</ul>
+
+	<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>
