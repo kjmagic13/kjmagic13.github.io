@@ -4,10 +4,29 @@
 	margin: 0 15px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 767px) {
 	.img-portfolio {
 		width: 100%;
 		margin: 10px 0 20px 0;
+	}
+}
+
+.img-portfolio-thumb {
+	width: 128px;
+	padding: 2px;
+	line-height: 1.42857143;
+	background-color: #222222; 
+	border: 1px solid #464545; 
+	border-radius: 4px; 
+	-webkit-transition: all .2s ease-in-out; 
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out; 
+	display: inline-block;
+}
+
+@media (max-width: 767px) {
+	.img-portfolio-thumb {
+		width: 96px;
 	}
 }
 
