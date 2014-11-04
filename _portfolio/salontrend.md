@@ -1,13 +1,13 @@
 ---
-layout:			post
+layout:			portfolio
 title:			"salonTREND"
 link:				salontrendvestal.com
 link_url:		http://salontrendvestal.com
-image:			portfolio-salontrend.png
 date:				2014-10-27 09:54:50
 tags:				twitter bootstrap
 ---
 
+<img src="/images/portfolio-salontrend.png" class="img-responsive img-thumbnail img-portfolio" title="{{page.title}}" alt="{{page.title}} screenshot" align="right">
 The salonTREND website was developed using a custom built WordPress theme that utilizes the Twitter Bootstrap 3 framwork.
 
 Notable features include:

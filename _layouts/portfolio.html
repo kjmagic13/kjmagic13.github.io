@@ -13,18 +13,8 @@ layout: default
 		</p>
 	</header>
 
-	<div class="row">
-		
-		<article class="col-sm-8">
-			{% if page.image %}
-			<img src="/images/{{ page.image }}" class="img-responsive img-thumbnail img-portfolio" title="{{page.title}}" alt="{{page.title}} screenshot" align="right">
-			{% endif %}
-
-			{{ content }}
-		</article>
-
-		<aside class="col-sm-4">{% include sidebar.html %}</aside>
-
-	</div>
+	<article class="post-content">
+		{{ content }}
+	</article>
 
 </div>
