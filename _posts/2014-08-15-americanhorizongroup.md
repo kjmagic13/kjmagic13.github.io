@@ -1,9 +1,9 @@
 ---
 layout:			post
 title:			"American Horizon Group"
-link:			americanhorizonsgroup.com
+link:				americanhorizonsgroup.com
 link_url:		http://americanhorizonsgroup.com
-date:			2014-08-15 09:54:50
+date:				2014-08-15 09:54:50
 categories:		portfolio
 ---
 
