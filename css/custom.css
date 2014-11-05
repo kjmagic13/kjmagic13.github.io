@@ -16,12 +16,12 @@ h1.title { margin-top: 0 !important; }
 	width: 128px;
 	padding: 2px;
 	line-height: 1.42857143;
-	background-color: #222222; 
-	border: 1px solid #464545; 
-	border-radius: 4px; 
-	-webkit-transition: all .2s ease-in-out; 
+	background-color: #2b3e50;
+	border: 1px solid #dddddd;
+	border-radius: 0;
+	-webkit-transition: all .2s ease-in-out;
 	-o-transition: all .2s ease-in-out;
-	transition: all .2s ease-in-out; 
+	transition: all .2s ease-in-out;
 	display: inline-block;
 }
 
