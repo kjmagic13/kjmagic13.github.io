@@ -1,20 +1,13 @@
 # Site settings
 title: KayMic
 tagline: IT &amp; Web Development
+description: > # ignore newlines
+  Experienced Web Developer with extensive knowledge in essentially all aspects of Internet Services, Information Technology, and Digital Multimedia.
+email: kevin@kaymic.com
 
-description: "Experienced Web Developer with extensive knowledge in essentially all aspects of Internet Services, Information Technology, and Digital Multimedia."
 baseurl: ""
 url: "http://kaymic.com"
 paginate: 10
-
-email: kevin@kaymic.com
-github_username:  kjmagic13
-bitbucket_username: kjmagic13
-linkedin_username: 131501982
-facebook_username: kjmagic13
-twitter_username: kjmagic13
-google_plus_username: +KevinMcCarthy_kjmagic13
-
 
 # Build settings
 markdown: kramdown
