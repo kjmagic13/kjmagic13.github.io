@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: Services
+permalink: /services/
 ---
 
 Kaymic.com uses the base Jekyll theme. You can find out more info about Jekyll, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
