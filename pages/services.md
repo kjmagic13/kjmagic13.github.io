@@ -2,6 +2,7 @@
 layout: page-sidebar
 title: Services
 permalink: /services/
+sidebar: widget-contact.html
 ---
 
 <h3>Web Services</h3>
