@@ -1,5 +1,7 @@
 h1.title { margin-top: 0 !important; }
 
+a.list-group-item { margin-bottom: 1px; }
+
 .img-portfolio {
 	width: 45%;
 	margin: 0 15px;
