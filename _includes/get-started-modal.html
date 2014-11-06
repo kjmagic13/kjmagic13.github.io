@@ -1,4 +1,4 @@
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="getStartedModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<form>
@@ -8,69 +8,99 @@
 				</div>
 				<div class="modal-body">
 
-					<fieldset>
-						<div class="form-group">
-							<label for="inputEmail" class="col-lg-2 control-label">Email</label>
-							<div class="col-lg-10">
-								<input type="text" class="form-control" id="inputEmail" placeholder="Email">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="inputPassword" class="col-lg-2 control-label">Password</label>
-							<div class="col-lg-10">
-								<input type="password" class="form-control" id="inputPassword" placeholder="Password">
-								<div class="checkbox">
-									<label>
-										<input type="checkbox"> Checkbox
-									</label>
+					<div id="webServices" class="collapse in">
+						<fieldset>
+							<div class="form-group">
+								<label for="select" class="col-lg-3 control-label">Web Service</label>
+								<div class="col-lg-9">
+									<select class="form-control" id="select">
+										<option>-</option>
+										<option>Jekyll</option>
+										<option>WordPress</option>
+										<option>Ruby on Rails</option>
+									</select>
 								</div>
 							</div>
-						</div>
-						<div class="form-group">
-							<label for="textArea" class="col-lg-2 control-label">Textarea</label>
-							<div class="col-lg-10">
-								<textarea class="form-control" rows="3" id="textArea"></textarea>
-								<span class="help-block">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
-							</div>
-						</div>
-						<div class="form-group">
-							<label class="col-lg-2 control-label">Radios</label>
-							<div class="col-lg-10">
-								<div class="radio">
-									<label>
-										<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
-										Option one is this
-									</label>
+
+							<div class="form-group">
+								<label class="col-lg-3 control-label">Hosting</label>
+								<div class="col-lg-9">
+									<div class="radio">
+										<label>
+											<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+											Shared Web
+										</label>
+									</div>
+									<div class="radio">
+										<label>
+											<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+											Dedicated
+										</label>
+									</div>
+									<div class="radio">
+										<label>
+											<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+											Virtual Private Server (VPS)
+										</label>
+									</div>
+
+									<div class="checkbox">
+										<label>
+											<input type="checkbox"> I currently have a hosting provider.
+										</label>
+									</div>
+
 								</div>
-								<div class="radio">
-									<label>
-										<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-										Option two can be something else
-									</label>
+							</div>
+						</fieldset>
+					</div>
+
+					<div id="itServices" class="collapse in">
+						<fieldset>
+							<div class="form-group">
+								<label for="select" class="col-lg-3 control-label">Web Service</label>
+								<div class="col-lg-9">
+									<select class="form-control" id="select">
+										<option>-</option>
+										<option>Jekyll</option>
+										<option>WordPress</option>
+										<option>Ruby on Rails</option>
+									</select>
 								</div>
 							</div>
-						</div>
-						<div class="form-group">
-							<label for="select" class="col-lg-2 control-label">Selects</label>
-							<div class="col-lg-10">
-								<select class="form-control" id="select">
-									<option>1</option>
-									<option>2</option>
-									<option>3</option>
-									<option>4</option>
-									<option>5</option>
-								</select>
-								<br>
-								<select multiple="" class="form-control">
-									<option>1</option>
-									<option>2</option>
-									<option>3</option>
-									<option>4</option>
-									<option>5</option>
-								</select>
+
+							<div class="form-group">
+								<label class="col-lg-3 control-label">Hosting</label>
+								<div class="col-lg-9">
+									<div class="radio">
+										<label>
+											<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+											Shared Web
+										</label>
+									</div>
+									<div class="radio">
+										<label>
+											<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+											Dedicated
+										</label>
+									</div>
+									<div class="radio">
+										<label>
+											<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+											Virtual Private Server (VPS)
+										</label>
+									</div>
+
+									<div class="checkbox">
+										<label>
+											<input type="checkbox"> I currently have a hosting provider.
+										</label>
+									</div>
+
+								</div>
 							</div>
-						</div>
-					</fieldset>
+						</fieldset>
+					</div>
 
 				</div>
 				<div class="modal-footer">
