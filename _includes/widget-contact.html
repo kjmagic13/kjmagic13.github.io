@@ -14,41 +14,27 @@
 				<label for="inputEmail" class="col-lg-2 control-label">Email</label>
 				<div class="col-lg-10">
 					<input type="text" class="form-control" id="inputEmail" placeholder="Email" name="Email" required>
-					<!-- <div class="checkbox">
-						<label>
-							<input type="checkbox"> Checkbox
-						</label>
-					</div> -->
 				</div>
 			</div>
 			<div class="form-group">
 				<label for="textArea" class="col-lg-2 control-label">Message</label>
 				<div class="col-lg-10">
 					<textarea class="form-control" rows="3" id="textArea" name="message"></textarea>
-					<!-- <span class="help-block">A longer block of help text that breaks onto a new line and may extend beyond one line.</span> -->
 				</div>
 			</div>
-			<!-- <div class="form-group">
-				<label class="col-lg-2 control-label">Radios</label>
-				<div class="col-lg-10">
-					<div class="radio">
+			<div class="form-group">
+				<div class="col-lg-10 col-lg-offset-2">
+					<div class="checkbox">
 						<label>
-							<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
-							Option one is this
-						</label>
-					</div>
-					<div class="radio">
-						<label>
-							<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-							Option two can be something else
+							<input type="checkbox" id="isHuman"> I am a human.
 						</label>
 					</div>
 				</div>
-			</div> -->
+			</div>
 			<div class="form-group">
 				<div class="col-lg-10 col-lg-offset-2">
 					<a href="/services" class="btn btn-default">Cancel</a>
-					<button type="submit" class="btn btn-info"><i class="fa fa-send"></i> Submit</button>
+					<button type="submit" id="contactSubmit" class="btn btn-info disabled"><i class="fa fa-send"></i> Submit</button>
 				</div>
 			</div>
 		</fieldset>
