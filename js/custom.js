@@ -8,6 +8,9 @@ $(function() {
 			$('#contactSubmit').addClass("disabled");
 		}
 	});
+	$("#contactReset").click(function(){
+		$('#contactSubmit').addClass("disabled");
+	});
 
 	// sticky footer
 	var docHeight, footerHeight, footerTop;
