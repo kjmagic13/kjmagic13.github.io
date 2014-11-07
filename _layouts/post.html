@@ -17,13 +17,15 @@ layout: default
 		
 		<article class="col-md-8">
 			{% if page.image %}
-			<img src="/images/{{ page.image }}" class="img-responsive img-thumbnail img-portfolio" title="{{page.title}}" alt="{{page.title}} screenshot" align="right">
+			<div class="col-sm-5 img-pull-right">
+				<img src="/images/{{ page.image }}" class="img-responsive img-thumbnail" title="{{page.title}}" alt="{{page.title}} screenshot">
+			</div>
 			{% endif %}
 
 			{{ content }}
 		</article>
 
-		<aside class="col-md-4">{% include sidebar.html %}</aside>
+		<aside class="col-md-4 clear-md">{% include sidebar.html %}</aside>
 
 	</div>
 

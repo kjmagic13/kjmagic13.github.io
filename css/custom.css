@@ -4,15 +4,17 @@ a.list-group-item { border-top: 1px solid #2b3e50; }
 
 .media-heading em { font-size: 15px; font-weight: lighter; font-style: italic; }
 
-.img-portfolio {
-	width: 45%;
-	margin: 0 15px;
+.img-pull-right {
+	float: right;
 }
 
-@media (max-width: 767px) {
-	.img-portfolio {
+@media (max-width: 991px) {
+	.clear-md {
+		clear: both;
+	}
+	.img-pull-right {
 		width: 100%;
-		margin: 10px 0 20px 0;
+		text-align: center;
 	}
 }
 
