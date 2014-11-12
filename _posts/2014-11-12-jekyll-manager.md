@@ -1,8 +1,8 @@
 ---
 layout:			post
 title:			"Jekyll Manager"
-link:				
-link_url:		
+link:				'coming soon'
+link_url:		'#'
 image:			portfolio-jekyll-manager.png
 date:				2014-11-12
 tags:				rails, jekyll
