@@ -3,39 +3,20 @@
 	<!-- Wrapper for slides -->
 	<div class="carousel-inner" role="listbox">
 
-		<div class="item active">
+		{% for data in site.data.testimonials %}
+		<div class="item {% if forloop.index0 == 0 %}active{% endif %}">
 			<blockquote class="">
-				<p>I am liking your expediency and quality of work.</p>
-				<footer>Gunnery Sergeant Donny Campbell <cite title="Source Title">Triton Poker Chips</cite></footer>
+				<p>{{data.testimonial}}</p>
+				<footer>{{data.name}} <cite title="Source Title">{{data.source}}</cite></footer>
 			</blockquote>
 		</div>
-
-		<div class="item">
-			<blockquote class="">
-				<p>You f*cking rock!</p>
-				<footer>Jason McGonnigal <cite title="Source Title">The Computer Shop NY</cite></footer>
-			</blockquote>
-		</div>
-
-		<div class="item">
-			<blockquote class="">
-				<p>Thanks so much!</p>
-				<footer>Jack Glasure <cite title="Source Title">Ignition Branding</cite></footer>
-			</blockquote>
-		</div>
-
-		<div class="item">
-			<blockquote class="">
-				<p>You are a rockstar!</p>
-				<footer>Vincent Talenti <cite title="Source Title">Wayside Creations</cite></footer>
-			</blockquote>
-		</div>
+		{% endfor %}
 
 	</div>
 
 	<!-- Controls -->
 	<p class="text-center">
-	<a class="left btn btn-sm btn-default" href="#carousel-example-generic" role="button" data-slide="prev">
+		<a class="left btn btn-sm btn-default" href="#carousel-example-generic" role="button" data-slide="prev">
 			<span class="glyphicon glyphicon-chevron-left"></span>
 			<span class="sr-only">Previous</span>
 		</a>
