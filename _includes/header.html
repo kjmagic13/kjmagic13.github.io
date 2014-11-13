@@ -27,9 +27,11 @@
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
 
-					{% for page in site.data.menu_pages %}
-					{% if page.title %}
-					<li><a href="{{ page.href | prepend: site.baseurl }}">{{ page.title }}</a></li>
+					{% for link in site.data.menu_pages %}
+					{% if link.title %}
+					<li class="{% if link.href == page.url %}active{% endif %}">
+					<a href="{{ link.href | prepend: site.baseurl }}">{{ link.title }}</a>
+					</li>
 					{% endif %}
 					{% endfor %}
 
