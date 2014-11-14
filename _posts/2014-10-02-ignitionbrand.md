@@ -7,5 +7,4 @@ image:			portfolio-ignitionbrand.png
 date:				2014-10-02 09:54:50
 tags:				wordpress
 ---
-
-Ignition Branding uses WordPress to showcase their agency's many services.
+Ignition Branding uses WordPress to feature their agency's many services.
