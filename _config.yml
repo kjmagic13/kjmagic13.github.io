@@ -8,6 +8,7 @@ email: kevin@kaymic.com
 baseurl: ""
 url: "http://kaymic.com"
 paginate: 10
+paginate_path: "portfolio/:num"
 
 # Build settings
 markdown: kramdown
