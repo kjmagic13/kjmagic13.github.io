@@ -1,10 +1,10 @@
 ---
-title:	"Potential Client: BuzzKill Rubber Co."
+title:	"BuzzKill Rubber Co."
 layout:	post
-date:	2014-11-15
-link:	buzzkillrubber.github.io
-link_url:	http://buzzkillrubber.github.io/
+date:	2014-12-02
+link:	buzzkillrubber.tk
+link_url:	http://buzzkillrubber.tk/
 image:	portfolio-buzzkill.png
-tags:	jekyll
+tags:	rails
 ---
-Created a Jekyll site to quickly mock-up a design for BuzzKill Rubber Co.
+Created a Ruby on Rails application for BuzzKill Rubber Co. to help the company expand by selling their products online.
