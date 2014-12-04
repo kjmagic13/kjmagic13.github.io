@@ -2,8 +2,8 @@
 title:	"BuzzKill Rubber Co."
 layout:	post
 date:	2014-12-02
-link:	buzzkillrubber.tk
-link_url:	http://buzzkillrubber.tk/
+link:	buzzkillrubber.com
+link_url:	http://buzzkillrubber.com/
 image:	portfolio-buzzkill.png
 tags:	rails
 ---
