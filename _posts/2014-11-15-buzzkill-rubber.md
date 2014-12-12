@@ -1,7 +1,7 @@
 ---
 title:	"BuzzKill Rubber Co."
 layout:	post
-date:	2014-12-02
+date:	2014-11-15
 link:	buzzkillrubber.com
 link_url:	http://buzzkillrubber.com/
 image:	portfolio-buzzkill.png
