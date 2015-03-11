@@ -21,12 +21,12 @@
 		{{ content }}
 	</div>
 
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
 	<script type="text/javascript">
 		/*** Handle jQuery plugin naming conflict between jQuery UI and Bootstrap ***/
-		$.widget.bridge('bsbutton', $.bs.button);
-		$.widget.bridge('bstooltip', $.bs.tooltip);
+		$.widget.bridge('uibutton', $.ui.button);
+		$.widget.bridge('uitooltip', $.ui.tooltip);
 	</script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 </body>
 </html>

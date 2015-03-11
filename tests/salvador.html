@@ -31,7 +31,7 @@ layout: bs
 			$(this).css( 'height', height+'px' );
 		});
 
-		$('.horizPan').mousemove(function (e) {
+		$('.horizPan').mousedown(function (e) {
 			var mousePosX = (e.pageX / $(window).width()) * 100;
 			var mousePosY = (e.pageY / $(window).height()) * 100;
 			$('.horizPan').css('backgroundPosition', mousePosX + '% ' + mousePosY +'%');
