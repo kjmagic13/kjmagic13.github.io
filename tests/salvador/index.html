@@ -6,7 +6,7 @@ layout: bs
 	<h2>Salvador Tests</h2>
 </div>
 
-<script src="../js/imagemapster.min.js"></script>
+<script src="js/imagemapster.min.js"></script>
 
 
 <script type="text/javascript">
@@ -25,16 +25,15 @@ layout: bs
 		});
 
 		// horizPan
-		$('.horizPan').each(function(){
-			height = $(this).attr('height') || 200;
+		$('.fancybox-image').each(function(){
+			height = $(this).attr('height') || 320;
 			$(this).wrap('<div class="horizPanContainer" data-scroll="true">');
 			$(this).closest('.horizPanContainer').css( 'height', height+'px' );
 		});
-		;
+		
 		// autoscroll?
 		var autoScroll = setInterval(function(){
 			$('.horizPanContainer').each(function (e) {
-
 				if ( $(this).data('scroll') ) {
 					currentScroll = $(this).scrollLeft();
 					maxScroll = (this.scrollWidth - this.clientWidth);
@@ -82,21 +81,17 @@ layout: bs
 		overflow-y: hidden;
 	}
 
-	.horizPanContainer img {
-		height: 100%;
-	}
-
 </style>
 
 <div id="log"></div>
 
 
-<p><img src="../images/AFE.jpg" height="325" class="horizPan"></p>
-<p><img src="../images/BGE.jpg" height="325" class="horizPan"></p>
+<p><img src="images/AFE.jpg" height="325" class="fancybox-image"></p>
+<p><img src="images/BGE.jpg" height="325" class="fancybox-image"></p>
 
 <p><br></p>
 
-<img src="../images/hover-imagemap.jpg" class="hover-imagemap" usemap="#overhead" style="max-width: 100%;">
+<img src="images/hover-imagemap.jpg" class="hover-imagemap" usemap="#overhead" style="max-width: 100%;">
 
 <map name="overhead">
 	<area title="Title Here" href="#" shape="rect" coords="1044,329,1073,359" target="_self" />
