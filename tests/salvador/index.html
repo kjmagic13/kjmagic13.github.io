@@ -6,7 +6,7 @@ layout: bs
 	<h2>Salvador Tests</h2>
 </div>
 
-<script src="js/imagemapster.min.js"></script>
+<script src="../js/imagemapster.min.js"></script>
 
 
 <script type="text/javascript">
@@ -19,6 +19,7 @@ layout: bs
 			fillOpacity: 0,
 			isSelectable: false
 		});
+
 		$('[title]').uitooltip({
 			track: true
 		});
@@ -30,7 +31,7 @@ layout: bs
 			$(this).closest('.horizPanContainer').css( 'height', height+'px' );
 		});
 		;
-		// autoscroll
+		// autoscroll?
 		var autoScroll = setInterval(function(){
 			$('.horizPanContainer').each(function (e) {
 
@@ -52,7 +53,8 @@ layout: bs
 				}
 			});
 		}, 25);
-		// mouse follow
+
+
 		$('.horizPanContainer').mousemove(function (e) {
 			maxScroll = (this.scrollWidth - this.clientWidth);
 			percentage = (e.pageX - $(this).offset().left) / this.clientWidth;
@@ -89,12 +91,12 @@ layout: bs
 <div id="log"></div>
 
 
-<p><img src="images/AFE.jpg" height="325" class="horizPan"></p>
-<p><img src="images/BGE.jpg" height="325" class="horizPan"></p>
+<p><img src="../images/AFE.jpg" height="325" class="horizPan"></p>
+<p><img src="../images/BGE.jpg" height="325" class="horizPan"></p>
 
 <p><br></p>
 
-<img src="images/hover-imagemap.jpg" class="hover-imagemap" usemap="#overhead" style="max-width: 100%;">
+<img src="../images/hover-imagemap.jpg" class="hover-imagemap" usemap="#overhead" style="max-width: 100%;">
 
 <map name="overhead">
 	<area title="Title Here" href="#" shape="rect" coords="1044,329,1073,359" target="_self" />
