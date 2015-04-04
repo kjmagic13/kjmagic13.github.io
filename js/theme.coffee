@@ -40,16 +40,16 @@ $ ->
 		reenableHostingRadios(web)
 
 	# contact form; is human?
-	$("#isHuman").change ->
-		if @checked
-			$("#contactSubmit").removeClass "disabled"
-		else
-			$("#contactSubmit").addClass "disabled"
-		return
+	# $("#isHuman").change ->
+	# 	if @checked
+	# 		$("#contactSubmit").removeClass "disabled"
+	# 	else
+	# 		$("#contactSubmit").addClass "disabled"
+	# 	return
 
-	$("#contactReset").click ->
-		$("#contactSubmit").addClass "disabled"
-		return
+	# $("#contactReset").click ->
+	# 	$("#contactSubmit").addClass "disabled"
+	# 	return
 
 	# sticky footer
 	docHeight = $(window).height()
