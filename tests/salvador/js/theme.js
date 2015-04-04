@@ -48,7 +48,7 @@ jQuery(document).ready(function($) {
 	});
 
 	// horizPan
-	$('.fancybox-image').each(function(){
+	$('.horizPan').each(function(){
 		height = $(this).attr('height') || 320;
 		$(this).wrap('<div class="horizPanContainer" data-scroll="true">');
 		$(this).closest('.horizPanContainer').css( 'height', height+'px' );

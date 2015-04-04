@@ -13,8 +13,15 @@ layout: bs
 	
 	jQuery(document).ready(function($) {
 
+		var loadimg = $('<img width="300">').attr('src', 'http://thesalvador.com/wordpress/wp-content/uploads/2015/01/D11-view.png');
+		loadimg.load(function(){
+			$('.fancybox-image').first().attr('src', loadimg.attr('src'));
+		});
+
+		
+
 		// hover image maps
-		$('.hover-imagemap').mapster({
+		$('.mapster-skyline').mapster({
 			fillColor: '000000',
 			fillOpacity: 0,
 			isSelectable: false
@@ -30,7 +37,7 @@ layout: bs
 			$(this).wrap('<div class="horizPanContainer" data-scroll="true">');
 			$(this).closest('.horizPanContainer').css( 'height', height+'px' );
 		});
-		
+
 		// autoscroll?
 		var autoScroll = setInterval(function(){
 			$('.horizPanContainer').each(function (e) {
@@ -91,9 +98,9 @@ layout: bs
 
 <p><br></p>
 
-<img src="images/hover-imagemap.jpg" class="hover-imagemap" usemap="#overhead" style="max-width: 100%;">
+<img src="images/hover-imagemap.jpg" class="mapster-skyline" usemap="#skyline" style="max-width: 100%;">
 
-<map name="overhead">
+<map name="skyline">
 	<area title="Title Here" href="#" shape="rect" coords="1044,329,1073,359" target="_self" />
 	<area title="Title Here" href="#" shape="rect" coords="851,325,880,355" target="_self" />
 	<area title="Title Here" href="#" shape="rect" coords="857,759,886,789" target="_self" />
