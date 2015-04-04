@@ -1,25 +1,29 @@
-<div class="well">
-	<form action="http://getsimpleform.com/messages?form_api_token=68ed36853aa11c126e1c160d9c4b21cd" method="post" class="form-horizontal">
-		<input type='hidden' name='redirect_to' value='http://kaymic.com/thank-you/' />
+<form action="//formspree.io/kevin@kaymic.com" method="post" class="form-horizontal">
+
+<input type="hidden" name="_next" value="//kaymic.com/thank-you" />
+<input type="hidden" name="_subject" value="KayMic Contact Submission" />
+<input type="text" name="_gotcha" style="display:none" />
+
+	<div class="well">
 		<fieldset>
 			<legend>Contact Me</legend>
-			
+
 			<div class="form-group">
 				<label for="inputName" class="col-lg-2 control-label">Name</label>
 				<div class="col-lg-10">
-					<input required class="form-control" id="inputName" placeholder="Name" name="Name">
+					<input required class="form-control" id="inputName" placeholder="Name" name="name">
 				</div>
 			</div>
 			<div class="form-group">
-				<label for="inputEmail" class="col-lg-2 control-label">Email</label>
+				<label for="_replyto" class="col-lg-2 control-label">Email</label>
 				<div class="col-lg-10">
-					<input type="email" required class="form-control" id="inputEmail" placeholder="Email" name="Email">
+					<input type="email" required class="form-control" placeholder="Email" name="_replyto">
 				</div>
 			</div>
 			<div class="form-group">
-				<label for="textArea" class="col-lg-2 control-label">Message</label>
+				<label for="message" class="col-lg-2 control-label">Message</label>
 				<div class="col-lg-10">
-					<textarea required class="form-control" rows="3" id="textArea" name="message"></textarea>
+					<textarea required class="form-control" rows="3" name="message"></textarea>
 				</div>
 			</div>
 			<div class="form-group">
@@ -38,5 +42,6 @@
 				</div>
 			</div>
 		</fieldset>
-	</form>
-</div>
+	</div>
+
+</form>
