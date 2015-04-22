@@ -3,7 +3,7 @@ title:	"Hillsborough Hack-a-Thon"
 layout:	post
 date:	2015-04-10
 link:	hackhillsborough.com
-link_url:	http://commbocc.github.io/hackathon
+link_url:	http://hackhillsborough.com
 image:	portfolio-hackathon.png
 tags:	jekyll
 ---
