@@ -2,9 +2,9 @@
 title:	"Hillsborough Hack-a-Thon"
 layout:	post
 date:	2015-04-10
-link:	hackhillsborough.com
-link_url:	http://hackhillsborough.com
-image:	portfolio-hackathon.png
+link:	code4hillsborough.com
+link_url:	http://code4hillsborough.com
+image:	portfolio-code4hillsborough.png
 tags:	jekyll
 ---
 
