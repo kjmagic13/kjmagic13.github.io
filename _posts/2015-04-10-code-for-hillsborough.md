@@ -1,5 +1,5 @@
 ---
-title:	"Hillsborough Hack-a-Thon"
+title:	"Code for Hillsborough"
 layout:	post
 date:	2015-04-10
 link:	code4hillsborough.com
