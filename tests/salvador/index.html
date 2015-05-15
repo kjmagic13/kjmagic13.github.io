@@ -2,119 +2,49 @@
 layout: bs
 ---
 
-<div class="page-header">
-	<h2>Salvador Tests</h2>
-</div>
-
-<script src="js/imagemapster.min.js"></script>
-
-
 <script type="text/javascript">
 	
 	jQuery(document).ready(function($) {
 
-		var loadimg = $('<img width="300">').attr('src', 'http://thesalvador.com/wordpress/wp-content/uploads/2015/01/D11-view.png');
-		loadimg.load(function(){
-			$('.fancybox-image').first().attr('src', loadimg.attr('src'));
+		var imageArr = new Array();
+
+		$('.viewFancybox').each(function(){
+			imgObj = new Image();
+			imgObj.src = $(this).data('view-img');
+			imgObj.id = "theImage";
+			imgObj.className = "img-responsive center-block";
+			imageArr[$(this).data('select')] =  imgObj;
 		});
 
-		
+		$('.viewFancybox').click(function(){
 
-		// hover image maps
-		$('.mapster-skyline').mapster({
-			fillColor: '000000',
-			fillOpacity: 0,
-			isSelectable: false
+			// imgObj.src = $(this).data('view-img');
+			$('#theImage').replaceWith( imageArr[$(this).data('select')] );
+			console.log( "clicked: " + $(this).data('select') );
+
 		});
-
-		$('[title]').uitooltip({
-			track: true
-		});
-
-		// horizPan
-		$('.fancybox-image').each(function(){
-			height = $(this).attr('height') || 320;
-			$(this).wrap('<div class="horizPanContainer" data-scroll="true">');
-			$(this).closest('.horizPanContainer').css( 'height', height+'px' );
-		});
-
-		// autoscroll?
-		var autoScroll = setInterval(function(){
-			$('.horizPanContainer').each(function (e) {
-				if ( $(this).data('scroll') ) {
-					currentScroll = $(this).scrollLeft();
-					maxScroll = (this.scrollWidth - this.clientWidth);
-
-					if ( currentScroll >= maxScroll ) {
-						$(this).data('reverse', true);
-					} else if ( currentScroll <= 0 ) {
-						$(this).data('reverse', false);
-					}
-
-					if ($(this).data('reverse')) {
-						$(this).scrollLeft( currentScroll-1 );
-					} else {
-						$(this).scrollLeft( currentScroll+1 );
-					}
-				}
-			});
-		}, 25);
-
-
-		$('.horizPanContainer').mousemove(function (e) {
-			maxScroll = (this.scrollWidth - this.clientWidth);
-			percentage = (e.pageX - $(this).offset().left) / this.clientWidth;
-			mousePosX = maxScroll * percentage;
-			$(this).scrollLeft( mousePosX );
-			$(this).data('scroll', false);
-		});
-		$('.horizPanContainer').mouseleave(function(){
-			$(this).data('scroll', true);
-		});
+		console.log(imageArr);
 
 	});
 
 </script>
 
+<img id="theImage" src="http://assets.worldwildlife.org/photos/2090/images/hero_small/Sumatran-Tiger-Hero.jpg?1345559303" class="img-responsive center-block">
 
-<style type="text/css">
-
-	.horizPanContainer::-webkit-scrollbar { 
-		display: none; 
-	}
-
-	.horizPanContainer {
-		overflow: scroll;
-		overflow-y: hidden;
-	}
-
-</style>
-
-<div id="log"></div>
-
-
-<p><img src="images/AFE.jpg" height="325" class="fancybox-image"></p>
-<p><img src="images/BGE.jpg" height="325" class="fancybox-image"></p>
-
-<p><br></p>
-
-<img src="images/hover-imagemap.jpg" class="mapster-skyline" usemap="#skyline" style="max-width: 100%;">
-
-<map name="skyline">
-	<area title="Title Here" href="#" shape="rect" coords="1044,329,1073,359" target="_self" />
-	<area title="Title Here" href="#" shape="rect" coords="851,325,880,355" target="_self" />
-	<area title="Title Here" href="#" shape="rect" coords="857,759,886,789" target="_self" />
-	<area title="Title Here" href="#" shape="rect" coords="309,229,338,259" target="_self" />
-	<area title="Title Here" href="#" shape="rect" coords="268,232,297,262" target="_self" />
-	<area title="Title Here" href="#" shape="rect" coords="90,302,119,332" target="_self" />
-	<area title="Title Here" href="#" shape="rect" coords="1168,638,1197,668" target="_self" />
-	<area title="Title Here" href="#" shape="rect" coords="1088,428,1117,458" target="_self" />
-	<area title="Title Here" href="#" shape="rect" coords="572,339,601,369" target="_self" />
-	<area title="Title Here" href="#" shape="rect" coords="64,361,93,391" target="_self" />
-	<area title="Title Here" href="#" shape="rect" coords="231,310,260,340" target="_self" />
-	<area title="Title Here" href="#" shape="rect" coords="509,357,538,387" target="_self" />
-	<area title="Title Here" href="#" shape="rect" coords="429,497,458,527" target="_self" />
-	<area title="Title Here" href="#" shape="rect" coords="173,385,202,415" target="_self" />
-	<area title="Title Here" href="#" shape="rect" coords="496,317,525,347" target="_self" />
-	<area title="The Salvador" href="#" shape="rect" coords="602,297,707,377" target="_self" />
-</map>
+<div class="" style="text-align: center;"> 
+	<a href="#fancyHorizPan" data-view-img="http://thesalvador.com/wordpress/wp-content/uploads/2015/03/BGE_320h-120ppi.jpg" title="13B" class="remote-hover viewFancybox ut-btn yellow small round" data-floorplan-thumb="http://thesalvador.com/wordpress/wp-content/uploads/2015/01/14_11_11_DDA_salvador_floorplan_B1-1200-e1421973442492.jpg" data-floorplan-download="http://thesalvador.com/wordpress/wp-content/uploads/2015/01/14_11_11_DDA_salvador_floorplan_B1-1200-e1421973442492.jpg" data-select="North 13B">13B</a> 
+	<a href="#fancyHorizPan" data-view-img="http://thesalvador.com/wordpress/wp-content/uploads/2015/03/BGE_320h-120ppi.jpg" title="13G" class="remote-hover viewFancybox ut-btn yellow small round" data-floorplan-thumb="http://thesalvador.com/wordpress/wp-content/uploads/2015/01/14_11_11_DDA_salvador_floorplans_G1_library-1200-232x300.jpg" data-floorplan-download="http://thesalvador.com/wordpress/wp-content/uploads/2015/01/14_11_11_DDA_salvador_floorplans_G1_library-1200-e1421973521312.jpg" data-select="North 13G">13G</a> 
+	<a href="#fancyHorizPan" data-view-img="http://thesalvador.com/wordpress/wp-content/uploads/2015/03/BGE_320h-120ppi.jpg" title="13E" class="remote-hover viewFancybox ut-btn yellow small round" data-floorplan-thumb="http://thesalvador.com/wordpress/wp-content/uploads/2015/01/14_11_11_DDA_salvador_floorplan_E1_den-1200-232x300.jpg" data-floorplan-download="http://thesalvador.com/wordpress/wp-content/uploads/2015/01/14_11_11_DDA_salvador_floorplan_E1_den-1200-e1421973503497.jpg" data-select="North 13E">13E</a> 
+	<a href="#fancyHorizPan" data-view-img="http://thesalvador.com/wordpress/wp-content/uploads/2015/05/B11-View-Floors-B10-12-View-v4.jpg" title="10-12B" class="remote-hover viewFancybox ut-btn yellow small round" data-floorplan-thumb="http://thesalvador.com/wordpress/wp-content/uploads/2015/01/14_11_11_DDA_salvador_floorplan_B1-1200-e1421973442492.jpg" data-floorplan-download="http://thesalvador.com/wordpress/wp-content/uploads/2015/01/14_11_11_DDA_salvador_floorplan_B1-1200-e1421973442492.jpg" data-select="North 10-12B">10-12B</a> 
+	<a href="#fancyHorizPan" data-view-img="http://thesalvador.com/wordpress/wp-content/uploads/2015/05/View-Floors-D10-12-v3.jpg" title="10-12D West" class="remote-hover viewFancybox ut-btn yellow small round" data-floorplan-thumb="http://thesalvador.com/wordpress/wp-content/uploads/2015/01/14_11_11_DDA_salvador_floorplan_D1-1200-232x300.jpg" data-floorplan-download="http://thesalvador.com/wordpress/wp-content/uploads/2015/01/14_11_11_DDA_salvador_floorplan_D1-1200-e1421973471268.jpg" data-select="North 10-12D West">10-12D West</a> 
+	<a href="#fancyHorizPan" data-view-img="http://thesalvador.com/wordpress/wp-content/uploads/2015/05/View-Floors-D10-12-v3.jpg" title="10-12D East" class="remote-hover viewFancybox ut-btn yellow small round" data-floorplan-thumb="http://thesalvador.com/wordpress/wp-content/uploads/2015/01/14_11_11_DDA_salvador_floorplan_D1-1200-232x300.jpg" data-floorplan-download="http://thesalvador.com/wordpress/wp-content/uploads/2015/01/14_11_11_DDA_salvador_floorplan_D1-1200-e1421973471268.jpg" data-select="North 10-12D East">10-12D East</a> 
+	<a href="#fancyHorizPan" data-view-img="http://thesalvador.com/wordpress/wp-content/uploads/2015/05/View-Floors-E10-12-v3-1.jpg" title="10-12E" class="remote-hover viewFancybox ut-btn yellow small round" data-floorplan-thumb="http://thesalvador.com/wordpress/wp-content/uploads/2015/01/14_11_11_DDA_salvador_floorplan_E1_den-1200-232x300.jpg" data-floorplan-download="http://thesalvador.com/wordpress/wp-content/uploads/2015/01/14_11_11_DDA_salvador_floorplan_E1_den-1200-e1421973503497.jpg" data-select="North 10-12E">10-12E</a> 
+	<a href="#fancyHorizPan" data-view-img="http://thesalvador.com/wordpress/wp-content/uploads/2015/05/B9-View-Floors-B8-9-v4.jpg" title="8-9B" class="remote-hover viewFancybox ut-btn yellow small round" data-floorplan-thumb="http://thesalvador.com/wordpress/wp-content/uploads/2015/01/14_11_11_DDA_salvador_floorplan_B1-1200-e1421973442492.jpg" data-floorplan-download="http://thesalvador.com/wordpress/wp-content/uploads/2015/01/14_11_11_DDA_salvador_floorplan_B1-1200-e1421973442492.jpg" data-select="North 8-9B">8-9B</a> 
+	<a href="#fancyHorizPan" data-view-img="http://thesalvador.com/wordpress/wp-content/uploads/2015/05/View-Floors-D8-9-v3.jpg" title="8-9D West" class="remote-hover viewFancybox ut-btn yellow small round" data-floorplan-thumb="http://thesalvador.com/wordpress/wp-content/uploads/2015/01/14_11_11_DDA_salvador_floorplan_D1-1200-232x300.jpg" data-floorplan-download="http://thesalvador.com/wordpress/wp-content/uploads/2015/01/14_11_11_DDA_salvador_floorplan_D1-1200-e1421973471268.jpg" data-select="North 8-9D West">8-9D West</a> 
+	<a href="#fancyHorizPan" data-view-img="http://thesalvador.com/wordpress/wp-content/uploads/2015/05/View-Floors-D8-9-v3.jpg" title="8-9D East" class="remote-hover viewFancybox ut-btn yellow small round" data-floorplan-thumb="http://thesalvador.com/wordpress/wp-content/uploads/2015/01/14_11_11_DDA_salvador_floorplan_D1-1200-232x300.jpg" data-floorplan-download="http://thesalvador.com/wordpress/wp-content/uploads/2015/01/14_11_11_DDA_salvador_floorplan_D1-1200-e1421973471268.jpg" data-select="North 8-9D East">8-9D East</a> 
+	<a href="#fancyHorizPan" data-view-img="http://thesalvador.com/wordpress/wp-content/uploads/2015/05/View-Floors-E9-10-v3.jpg" title="8-9E" class="remote-hover viewFancybox ut-btn yellow small round" data-floorplan-thumb="http://thesalvador.com/wordpress/wp-content/uploads/2015/01/14_11_11_DDA_salvador_floorplan_E1_den-1200-232x300.jpg" data-floorplan-download="http://thesalvador.com/wordpress/wp-content/uploads/2015/01/14_11_11_DDA_salvador_floorplan_E1_den-1200-e1421973503497.jpg" data-select="North 8-9E">8-9E</a> 
+	<a href="#fancyHorizPan" data-view-img="http://thesalvador.com/wordpress/wp-content/uploads/2015/05/B7-View-Floors-B6-7-v4.jpg" title="6-7B" class="remote-hover viewFancybox ut-btn yellow small round" data-floorplan-thumb="http://thesalvador.com/wordpress/wp-content/uploads/2015/01/14_11_11_DDA_salvador_floorplan_B1-1200-e1421973442492.jpg" data-floorplan-download="http://thesalvador.com/wordpress/wp-content/uploads/2015/01/14_11_11_DDA_salvador_floorplan_B1-1200-e1421973442492.jpg" data-select="North 6-7B">6-7B</a> 
+	<a href="#fancyHorizPan" data-view-img="http://thesalvador.com/wordpress/wp-content/uploads/2015/05/View-Floors-D6-7-v3.jpg" title="6-7D West" class="remote-hover viewFancybox ut-btn yellow small round" data-floorplan-thumb="http://thesalvador.com/wordpress/wp-content/uploads/2015/01/14_11_11_DDA_salvador_floorplan_D1-1200-232x300.jpg" data-floorplan-download="http://thesalvador.com/wordpress/wp-content/uploads/2015/01/14_11_11_DDA_salvador_floorplan_D1-1200-e1421973471268.jpg" data-select="North 6-7D West">6-7D West</a> 
+	<a href="#fancyHorizPan" data-view-img="http://thesalvador.com/wordpress/wp-content/uploads/2015/05/View-Floors-D6-7-v3.jpg" title="6-7D East" class="remote-hover viewFancybox ut-btn yellow small round" data-floorplan-thumb="http://thesalvador.com/wordpress/wp-content/uploads/2015/01/14_11_11_DDA_salvador_floorplan_D1-1200-232x300.jpg" data-floorplan-download="http://thesalvador.com/wordpress/wp-content/uploads/2015/01/14_11_11_DDA_salvador_floorplan_D1-1200-e1421973471268.jpg" data-select="North 6-7D East">6-7D East</a> 
+	<a href="#fancyHorizPan" data-view-img="http://thesalvador.com/wordpress/wp-content/uploads/2015/05/View-Floors-E6-7-v3-2.jpg" title="6-7E" class="remote-hover viewFancybox ut-btn yellow small round" data-floorplan-thumb="http://thesalvador.com/wordpress/wp-content/uploads/2015/01/14_11_11_DDA_salvador_floorplan_E1_den-1200-232x300.jpg" data-floorplan-download="http://thesalvador.com/wordpress/wp-content/uploads/2015/01/14_11_11_DDA_salvador_floorplan_E1_den-1200-e1421973503497.jpg" data-select="North 6-7E">6-7E</a> 
+</div>
