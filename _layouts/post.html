@@ -24,6 +24,12 @@ layout: default
 
 			{{ content }}
 
+			<ul class="list-inline">
+				{% for tag in page.tags %}
+				<li class="label label-primary">{{ tag }}</li>
+				{% endfor %}
+			</ul>
+
 			<span class="clearfix"></span>
 			<hr>
 

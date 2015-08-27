@@ -5,6 +5,6 @@ date:	2015-01-03
 link:	spcaofhernando.herokuapp.com
 link_url:	http://spcaofhernando.herokuapp.com/
 image:	portfolio-spca-hernando.png
-tags:	rails
+tags:	ruby-on-rails
 ---
 A donation to the SPCA of Hernando County.
