@@ -5,7 +5,7 @@ link:				salontrendvestal.com
 link_url:		http://salontrendvestal.com
 image:			portfolio-salontrend.png
 date:				2014-10-27 09:54:50
-tags:				twitter bootstrap
+tags:				wordpress wordpress-theme twitter-bootstrap
 ---
 
 The salonTREND website was developed using a custom built WordPress theme that utilizes the Twitter Bootstrap 3 framwork.
