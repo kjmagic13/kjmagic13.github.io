@@ -7,3 +7,5 @@ link_url:	http://commbocc.github.io/hurricaneExpo/
 image:	portfolio-hurricane.png
 tags:	jekyll
 ---
+
+This year's theme, Be Ready Tampa Bay, will focus on the importance of taking actions before a major disaster to ensure you can recover successfully and thrive after a storm.
