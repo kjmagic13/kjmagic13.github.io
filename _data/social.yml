@@ -8,6 +8,11 @@
   link: https://bitbucket.org/
   icon: bitbucket
 
+- name: StackOverflow
+  id: kjmagic13
+  link: http://stackoverflow.com/users/2280625/
+  icon: stack-overflow
+
 - name: LinkedIn
   id: 131501982
   link: https://www.linkedin.com/profile/view?id=
