@@ -3,6 +3,8 @@
 
 $ ->
 
+	new WOW().init()
+
 	# get started modal functions
 	# $(window).load ->
 	# 	$("#getStartedModal").modal "show"
