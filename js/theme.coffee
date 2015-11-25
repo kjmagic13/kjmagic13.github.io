@@ -4,10 +4,12 @@
 $ ->
 
 	# helpscout beacon
-	$('#hsbeacon').click ->
+	$('.open-hsbeacon').click (event) ->
+		event.preventDefault()
 		HS.beacon.open()
 		return
 
+	# WOW js
 	new WOW().init()
 
 	# get started modal functions
