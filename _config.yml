@@ -13,3 +13,7 @@ paginate_path: "portfolio/:num"
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+gems:
+ - jekyll-coffeescript
+ - jekyll-paginate

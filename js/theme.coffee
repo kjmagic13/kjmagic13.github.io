@@ -3,6 +3,11 @@
 
 $ ->
 
+	# helpscout beacon
+	$('#hsbeacon').click ->
+		HS.beacon.open()
+		return
+
 	new WOW().init()
 
 	# get started modal functions
