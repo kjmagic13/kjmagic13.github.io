@@ -1,10 +1,10 @@
 # will load from "{{site.baseurl}}/js/{{asset.src}}.js"
 js:
-    - src: bootstrap-3.3.5.min
-    - src: theme
-    - src: bslightbox
-    - src: wow.min
+    - src: bootstrap-3.3.5.min.js
+    - src: theme.js
+    - src: bslightbox.js
+    - src: wow.min.js
 
 # will load from "{{site.baseurl}}/css/{{asset.src}}.css"
 css:
-    - src: wow-animate.min
+    - src: wow-animate.min.css
