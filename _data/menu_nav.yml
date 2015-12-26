@@ -1,2 +1,6 @@
 - title: Portfolio
   href: /portfolio/
+
+- title: Contact
+  href: "#"
+  class: open-hsbeacon
