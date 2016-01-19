@@ -9,7 +9,7 @@ title: Portfolio
 		<div class="panel panel-default">
 			{% if post.image %}
 			<a href="{{ post.url | prepend: site.baseurl }}">
-				<img class="img-responsive center-block" src="/images/{{ post.image }}" alt="{{post.title}} screenshot">
+				<img class="img-responsive center-block" src="/images/thumbs/{{ post.image }}" alt="{{post.title}} screenshot">
 			</a>
 			{% endif %}
 			<div class="panel-body">
