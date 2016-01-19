@@ -3,6 +3,14 @@
 
 $ ->
 
+	# masonry
+	$container = $('.masonry-container')
+	$container.imagesLoaded ->
+		$container.masonry
+			columnWidth: '.masonry-item'
+			itemSelector: '.masonry-item'
+		return
+
 	# helpscout beacon
 	$('.open-hsbeacon').click (event) ->
 		event.preventDefault()

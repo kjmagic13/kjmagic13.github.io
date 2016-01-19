@@ -4,6 +4,8 @@ js:
     - src: theme.js
     - src: bslightbox.js
     - src: wow.min.js
+    - src: imagesLoaded.min.js
+    - src: masonry.min.js
 
 # will load from "{{site.baseurl}}/css/{{asset.src}}.css"
 css:
