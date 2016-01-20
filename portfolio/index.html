@@ -13,7 +13,16 @@ title: Portfolio
 			</a>
 			{% endif %}
 			<div class="panel-body">
-				<h4>{{ post.title }}</h4>
+				<h4>
+					{% if post.link_url %}
+					<small class="pull-right">
+						<a href="{{ post.link_url }}" target="_blank">
+							<i class="fa fa-external-link"></i>
+						</a>
+					</small>
+					{% endif %}
+					{{ post.title }}
+				</h4>
 				<ul class="list-inline">
 					{% for tag in post.tags %}
 					<li class="label label-primary">{{ tag }}</li>

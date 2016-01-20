@@ -1,8 +1,6 @@
 ---
 layout:			post
 title:			"Jekyll Manager"
-link:				'coming soon'
-link_url:		http://jekyll.kaymic.com/
 image:			portfolio-jekyll-manager.png
 date:				2014-11-10
 tags:				ruby-on-rails jekyll twitter-bootstrap
