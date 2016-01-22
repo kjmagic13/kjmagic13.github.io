@@ -12,9 +12,12 @@ $ ->
 		return
 
 	# helpscout beacon
-	$('.open-hsbeacon').click (event) ->
-		event.preventDefault()
+	$(document).on 'click', '.open-hsbeacon', (e) ->
+		e.preventDefault()
 		HS.beacon.open()
+		# topic = $(this).data('topic')
+		# if topic
+		# 	change beacon topic select to topic var
 		return
 
 	# WOW js
