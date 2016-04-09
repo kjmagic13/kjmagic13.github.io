@@ -4,7 +4,7 @@ layout:	post
 date:	2015-06-06
 link:	hillsboroughcdms.org/blue-ribbon
 link_url:	http://www.hillsboroughcdms.org/blue-ribbon
-image:	portfolio-brc.png
+image:	brc.png
 tags:	ruby-on-rails hosting server-manangement twitter-bootstrap
 excerpt: "Vision of the Committee: Develop a coordinated and collaborative approach to children's service in Hillsborough County."
 ---

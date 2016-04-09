@@ -4,7 +4,7 @@ layout:	post
 date:	2015-04-10
 link:	code4hillsborough.com
 link_url:	http://code4hillsborough.com
-image:	portfolio-code4hillsborough.png
+image:	code4hillsborough.png
 tags:	jekyll hosting twitter-bootstrap
 ---
 

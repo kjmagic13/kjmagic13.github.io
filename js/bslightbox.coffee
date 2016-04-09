@@ -23,5 +23,5 @@ $ ->
 
 	$('[data-bslightbox="true"]').click ->
 		$('#bslightboxModal').find('.modal-title').text $(this).attr('title')
-		$("#bslightboxModal").find(".modal-body img").attr "src", $(this).attr("src")
+		$("#bslightboxModal").find(".modal-body img").attr "src", $(this).data("full")
 		$('#bslightboxModal').modal 'show'

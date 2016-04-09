@@ -3,7 +3,7 @@ layout:			post
 title:			"salonTREND"
 link:				salontrendvestal.com
 link_url:		http://salontrendvestal.com
-image:			portfolio-salontrend.png
+image:			salontrend.png
 date:				2014-10-27 09:54:50
 tags:				wordpress wordpress-theme twitter-bootstrap
 ---

@@ -3,7 +3,7 @@ title:	"Hillsborough's Fallen Heroes"
 layout:	post
 link:	http://commbocc.github.io/fallenheroes/
 link_url:	http://commbocc.github.io/fallenheroes/
-image:	portfolio-fallen-heroes.png
+image:	fallen-heroes.png
 tags:	jekyll twitter-bootstrap
 ---
 

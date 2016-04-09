@@ -60,7 +60,7 @@
 					<key>replaceExisting</key>
 					<false/>
 					<key>toDirectory</key>
-					<string>~/Documents/projects/kaymic/images</string>
+					<string>~/Documents/projects/kaymic/images/portfolio</string>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.CopyFiles</string>
@@ -802,7 +802,7 @@
 					<key>replaceExisting</key>
 					<false/>
 					<key>toDirectory</key>
-					<string>~/Documents/projects/kaymic/images/thumbs</string>
+					<string>~/Documents/projects/kaymic/images/portfolio/thumbs</string>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.CopyFiles</string>
@@ -1026,33 +1026,33 @@
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>207AA48E-4452-4F8E-819B-D893A9F07CEB</key>
+		<key>0D3B0CC7-A8C8-4F57-A791-916F19D08554</key>
+		<dict>
+			<key>from</key>
+			<string>4A8E5DCE-151C-4DF7-A2A7-515402C25D70 - 4A8E5DCE-151C-4DF7-A2A7-515402C25D70</string>
+			<key>to</key>
+			<string>E1275214-E69A-4F23-ADDF-FBA0DB484F7F - E1275214-E69A-4F23-ADDF-FBA0DB484F7F</string>
+		</dict>
+		<key>0E07B7C6-EFB0-4CEF-8769-5470D72947E1</key>
+		<dict>
+			<key>from</key>
+			<string>D54780A6-2C56-4C3D-9D5E-765D3929257C - D54780A6-2C56-4C3D-9D5E-765D3929257C</string>
+			<key>to</key>
+			<string>4A8E5DCE-151C-4DF7-A2A7-515402C25D70 - 4A8E5DCE-151C-4DF7-A2A7-515402C25D70</string>
+		</dict>
+		<key>1477BC3A-5E7F-410E-BB4E-64B40E26E7A7</key>
 		<dict>
 			<key>from</key>
 			<string>DC681AA8-9C44-45A1-AE33-F9A14C950062 - DC681AA8-9C44-45A1-AE33-F9A14C950062</string>
 			<key>to</key>
 			<string>5C2ABAED-5616-4B01-BD31-1064408223CA - 5C2ABAED-5616-4B01-BD31-1064408223CA</string>
 		</dict>
-		<key>23FC48C5-5FDB-4506-BC99-C2A897E68CAF</key>
+		<key>1770FD51-5050-4BF5-AF2C-B3877D232601</key>
 		<dict>
 			<key>from</key>
 			<string>5C2ABAED-5616-4B01-BD31-1064408223CA - 5C2ABAED-5616-4B01-BD31-1064408223CA</string>
 			<key>to</key>
 			<string>D54780A6-2C56-4C3D-9D5E-765D3929257C - D54780A6-2C56-4C3D-9D5E-765D3929257C</string>
-		</dict>
-		<key>74AEC8AD-E0DF-4413-8E00-B04B7F90C949</key>
-		<dict>
-			<key>from</key>
-			<string>D54780A6-2C56-4C3D-9D5E-765D3929257C - D54780A6-2C56-4C3D-9D5E-765D3929257C</string>
-			<key>to</key>
-			<string>4A8E5DCE-151C-4DF7-A2A7-515402C25D70 - 4A8E5DCE-151C-4DF7-A2A7-515402C25D70</string>
-		</dict>
-		<key>E5BCB7C9-8718-4558-86E1-CD5D9C812A01</key>
-		<dict>
-			<key>from</key>
-			<string>4A8E5DCE-151C-4DF7-A2A7-515402C25D70 - 4A8E5DCE-151C-4DF7-A2A7-515402C25D70</string>
-			<key>to</key>
-			<string>E1275214-E69A-4F23-ADDF-FBA0DB484F7F - E1275214-E69A-4F23-ADDF-FBA0DB484F7F</string>
 		</dict>
 	</dict>
 	<key>workflowMetaData</key>
