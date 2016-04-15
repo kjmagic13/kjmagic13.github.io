@@ -14,7 +14,7 @@ layout: default
 				</div>
 				<div class="col-md-7 wow fadeIn" data-wow-delay="1s">
 					<p>{{site.description}}</p>
-					<p>
+					<p class="">
 						<a class="btn btn-info btn-lg" href="/portfolio" role="button">
 							<i class="fa fa-fw fa-file-text"></i> View my work
 						</a>
@@ -26,15 +26,118 @@ layout: default
 
 	<div>{% include flash.html %}</div>
 
+	<p class="lead">
+		A website allows organizations and individuals to serve content to the Internet. There are various levels of services offered, see which one is right for you, or <a href="#" class="open-hsbeacon">drop me a line</a> if you have any questions.
+	</p>
+
 	<div class="row">
-		<div class="col-md-7">
-			{% include services.html %}
+		<div class="col-sm-4">
+			<h3 class="text-center text-info">
+				<i class="fa fa-fw fa-map-o fa-4x"></i><br>
+				<small>
+					Brochure Sites
+				</small>
+			</h3>
+			<p>
+				A brochure site can do much more than the name suggests. Interact with your customers by showcasing your company or product dynamically. The most cost-effective way to achieve this goal with the ability to grow.
+			</p>
 		</div>
-
-		<div class="col-md-5">
-			{% include sidebar.html %}
+		<div class="col-sm-4">
+			<h3 class="text-center text-info">
+				<i class="fa fa-fw fa-file-text-o fa-4x"></i><br>
+				<small>
+					Content Management Systems
+				</small>
+			</h3>
+			<p>
+				Have an existing Content Management System (CMS) or creating a new one? No problem, here are just a few that I have experience working in:
+			</p>
+			<strong>
+				<ul class="list-inline text-center">
+					<li>SquareSpace</li>
+					<li>WordPress</li>
+					<li>Sitecore</li>
+				</ul>
+			</strong>
 		</div>
-
+		<div class="col-sm-4">
+			<h3 class="text-center text-info">
+				<i class="fa fa-fw fa-code fa-4x"></i><br>
+				<small>
+					Web Applications
+				</small>
+			</h3>
+			<p>
+				Think 'Mobile App' but not restricted to a specific device; a Web Applcation works on any platform that has an internet connection. Offer your audience a way to interact with you in a way that's tailored to your organization.
+			</p>
+		</div>
 	</div>
+
+	<p></p>
+
+	<div class="row">
+		<div class="col-sm-3 col-xs-6">
+			<div class="thumbnail text-info" title="HTML5" data-container="body" data-toggle="_popover" data-placement="top" data-content="">
+				<h4 class="text-center">
+					<i class="fa fa-fw fa-html5 fa-4x"></i><br>
+					<small>
+						HTML5
+					</small>
+				</h4>
+			</div>
+		</div>
+		<div class="col-sm-3 col-xs-6">
+			<div class="thumbnail text-info" title="Mobile First" data-container="body" data-toggle="_popover" data-placement="top" data-content="">
+				<h4 class="text-center">
+					<i class="fa fa-fw fa-mobile fa-4x"></i><br>
+					<small>
+						Mobile First
+					</small>
+				</h4>
+			</div>
+		</div>
+		<div class="col-sm-3 col-xs-6">
+			<div class="thumbnail text-info" title="Version Control" data-container="body" data-toggle="_popover" data-placement="top" data-content="">
+				<h4 class="text-center">
+					<i class="fa fa-fw fa-code-fork fa-4x"></i><br>
+					<small>
+						Version Control
+					</small>
+				</h4>
+			</div>
+		</div>
+		<div class="col-sm-3 col-xs-6">
+			<div class="thumbnail text-info" title="Cloud Storage" data-container="body" data-toggle="_popover" data-placement="top" data-content="">
+				<h4 class="text-center">
+					<i class="fa fa-fw fa-cloud fa-4x"></i><br>
+					<small>
+						Cloud Storage
+					</small>
+				</h4>
+			</div>
+		</div>
+	</div>
+
+	<hr />
+
+	<h3 class="text-center">Most Recent Work</h3>
+
+	<div class="well well-sm">
+		<div class="row">
+			{% for post in site.posts | limit: 4 %}
+			<div class="col-sm-3 col-xs-6">
+				<a href="{{ post.url | prepend: site.baseurl }}" title="{{post.title}}">
+					<p>
+						<div class="embed-responsive embed-responsive-16by9">
+							<img class="img-responsive center-block" src="/images/portfolio/thumbs/{{ post.image }}" alt="{{post.title}}">
+						</div>
+					</p>
+				</a>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+
+	<a href="{{ '/portfolio' | prepend: site.baseurl }}" class="btn btn-text btn-xs btn-block">See All Work</a>
 
 </div>
