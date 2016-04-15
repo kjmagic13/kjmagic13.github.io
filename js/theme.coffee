@@ -3,6 +3,9 @@
 
 $ ->
 
+	# bootstrap
+	$('[data-toggle="popover"]').popover()
+
 	# masonry
 	$container = $('.masonry-container')
 	$container.imagesLoaded ->

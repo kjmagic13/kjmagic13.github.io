@@ -7,16 +7,22 @@
 			<div class="col-sm-7">{% include testimonials.html %}</div>
 
 			<div class="col-sm-5">
-				<ul class="nav nav-pills text-center">
+				<ul class="list-inline text-center">
 					{% for page in site.data.social %}
 					<li>
 						<a href="{{page.link}}{{page.id}}" target="_blank" title="{{page.name}}">
-							<i class="fa fa-{{page.icon}}"></i>
+							<i class="fa fa-fw fa-{{page.icon}} text-info"></i>
 						</a>
 					</li>
 					{% endfor %}
 
-					{% if site.email %}<li><a href="mailto:{{site.email}}" title="Email"><i class="fa fa-envelope"></i></a></li>{% endif %}
+					{% if site.email %}
+					<li>
+						<a href="mailto:{{site.email}}" title="Email">
+							<i class="fa fa-fw fa-envelope text-info"></i>
+						</a>
+					</li>
+					{% endif %}
 				</ul>
 			</div>
 
