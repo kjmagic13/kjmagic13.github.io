@@ -5,7 +5,7 @@ permalink: /nhl/
 
 # MOCK NHL
 
-* [Season Spreadsheet](https://docs.google.com/spreadsheets/d/1W7_MIBiKyBPYWA_xFp5_KlQyzoDVRuYDoWFh5XFWY9A/pubhtml?single=false&widget=false&headers=false)
+* [Season Spreadsheet](https://docs.google.com/spreadsheets/d/1W7_MIBiKyBPYWA_xFp5_KlQyzoDVRuYDoWFh5XFWY9A/pubhtml?single=false&widget=true&headers=false)
 
 ## Rules
 
