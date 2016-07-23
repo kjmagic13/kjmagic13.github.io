@@ -9,6 +9,12 @@ permalink: /nhl/
 
 ## Rules
 
+A game should use the default settings:
+
+* NHL mode
+* 4 minute periods
+* Goalie mode on
+
 __A team is eliminated once its calculated cumulative losses exceeds 2__. A loss (L) counts as one loss and an overtime loss (OTL) counts as a half loss.
 
 __A player wins once they are the only Division that has teams remaining__.
