@@ -124,7 +124,7 @@ layout: default
 
 	<div class="well well-sm">
 		<div class="row">
-			{% for post in site.posts | limit: 4 %}
+			{% for post in site.posts limit: 4 %}
 			<div class="col-sm-3 col-xs-6">
 				<a href="{{ post.url | prepend: site.baseurl }}" title="{{post.title}}">
 					<p>
