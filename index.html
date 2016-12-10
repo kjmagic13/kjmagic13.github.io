@@ -126,7 +126,7 @@ layout: default
 		<div class="row">
 			{% for post in site.posts limit: 4 %}
 			<div class="col-sm-3 col-xs-6">
-				<a href="{{ post.url | prepend: site.baseurl }}" title="{{post.title}}">
+				<a href="{{ post.url | relative_url }}" title="{{post.title}}">
 					<p>
 						<div class="embed-responsive embed-responsive-16by9">
 							<img class="img-responsive center-block" src="/images/portfolio/thumbs/{{ post.image }}" alt="{{post.title}}">
@@ -138,6 +138,6 @@ layout: default
 		</div>
 	</div>
 
-	<a href="{{ '/portfolio' | prepend: site.baseurl }}" class="btn btn-text btn-xs btn-block">See All Work</a>
+	<a href="{{ '/portfolio' | relative_url }}" class="btn btn-text btn-xs btn-block">See All Work</a>
 
 </div>
